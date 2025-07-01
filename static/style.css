@@ -1,0 +1,58 @@
+/* Sticky space below navbar */
+body {
+    padding-top: 70px;
+}
+
+/* Navbar - Midnight Blue */
+.custom-navbar {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+}
+
+.custom-navbar .nav-link {
+    color: #b2dfdb !important;
+    font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.custom-navbar .nav-link.active {
+    color: #26c6da !important;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 180px;
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    color: white;
+}
+
+/* Typing Text Animation */
+.gradient-text {
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ffe0, #ff00c8, #ffaa00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: typing 4s steps(40, end), blink .75s step-end infinite;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent }
+    50% { border-color: white }
+}
+    
