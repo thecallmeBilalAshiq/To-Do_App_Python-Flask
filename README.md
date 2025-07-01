@@ -58,25 +58,18 @@ git clone https://github.com/thecallmeBilalAshiq/To-Do_App_Python-Flask.git
 cd To-Do_App_Python-Flask
 
 
-python3 -m venv venv
-source venv/bin/activate        # macOS/Linux
-venv\Scripts\activate           # Windows
-
-
-
-
+virtual env venv
+.\env\Scripts\activate
 pip install -r requirements.txt
 
 
-
-flask db upgrade
-python seed.py
-
+python setup_db.py
+python app.py  #finally code running
 
 export FLASK_APP=application.py  # macOS/Linux
 set FLASK_APP=application.py     # Windows
 
-flask run
+
 
 
 | Method | Endpoint                | Description                           |
